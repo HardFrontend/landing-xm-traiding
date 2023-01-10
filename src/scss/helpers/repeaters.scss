@@ -1,0 +1,271 @@
+/**
+ * Repeaters
+ */
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  background-color: $white;
+}
+
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+.d-none {
+  display: none;
+}
+
+.d-lg-none {
+  @media only screen and (min-width: $lg) {
+    display: none;
+  }
+}
+
+.d-xl-none {
+  @media only screen and (min-width: $xl) {
+    display: none;
+  }
+}
+
+.d-block {
+  display: block;
+}
+
+.d-xxl-block {
+  @media only screen and (min-width: $xxl) {
+    display: block;
+  }
+}
+
+.d-flex {
+  display: flex;
+}
+
+.d-lg-flex {
+  @media only screen and (min-width: $lg) {
+    display: flex;
+  }
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.flex-row-reverse {
+    flex-direction: row-reverse;
+}
+
+.flex-md-row {
+  @media only screen and (min-width: $md) {
+    flex-direction: row;
+  }
+}
+
+.flex-md-row-reverse {
+  @media only screen and (min-width: $md) {
+    flex-direction: row-reverse;
+  }
+}
+
+.flex-lg-row {
+  @media only screen and (min-width: $lg) {
+    flex-direction: row;
+  }
+}
+
+.flex-xl-row {
+  @media only screen and (min-width: $xl) {
+    flex-direction: row;
+  }
+}
+
+.flex-xl-row-reverse {
+  @media only screen and (min-width: $xl) {
+    flex-direction: row-reverse;
+  }
+}
+
+.flex-xxl-row-reverse {
+  @media only screen and (min-width: $xxl) {
+    flex-direction: row-reverse;
+  }
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.align-items-bottom {
+  align-items: flex-end;
+}
+
+.align-items-xl-center {
+  @media only screen and (min-width: $xl) {
+    align-items: center;
+  }
+}
+
+.align-items-top {
+  align-items: flex-start;
+}
+
+.justify-content-between {
+  justify-content: space-between;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.justify-content-md-end {
+  @media only screen and (min-width: $md) {
+    justify-content: flex-end;
+  }
+}
+
+.justify-content-lg-end {
+  @media only screen and (min-width: $lg) {
+    justify-content: flex-end;
+  }
+}
+
+.justify-content-lg-center {
+  @media only screen and (min-width: $lg) {
+    justify-content: center;
+  }
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.m-0 {
+  margin: 0;
+}
+
+.mt-0 {
+  margin-top: 0;
+}
+
+.mb-0 {
+  margin-bottom: 0;
+}
+
+.p-0 {
+  padding: 0;
+}
+
+.position-relative {
+  position: relative;
+}
+
+.position-absolute {
+  position: absolute;
+}
+
+.position-fixed {
+  position: fixed;
+}
+
+.section {
+  padding: 3rem 0 3.125rem;
+
+  @media only screen and (min-width: $md) {
+    padding: 6rem 0 6.25rem;
+  }
+
+  @media only screen and (min-width: $xxl) {
+    padding: 5.4375rem 0 6.25rem;
+  }
+}
+
+.main {
+  overflow: hidden;
+}
+
+.visually-hidden,
+.visually-hidden-focusable:not(:focus):not(:focus-within) {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.hover-opacity-0-75 {
+  @include transition(opacity);
+
+  &:hover,
+  &:focus,
+  &:active {
+    opacity: 0.75;
+  }
+}
+
+.hover-opacity-0-5 {
+  @include transition(opacity);
+
+  &:hover,
+  &:focus,
+  &:active {
+    opacity: 0.5;
+  }
+}
+
+.h-100 {
+  height: 100%;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.mw-100 {
+  max-width: 100%;
+}
+
+.mt-3 {
+  margin-top: 1.5rem;
+}
+
+.object-fit-cover {
+  object-fit: cover;
+  font-family: "object-fit: cover;", sans-serif;
+}
+
+.noscroll {
+  overflow-y: hidden;
+}
+
+.bg-black {
+  background-color: $black;
+}
+
+.bg-grey {
+  background-color: $gray;
+}
+
+.color-white {
+  color: $white;
+}
+
+.list-unstyled {
+  list-style: none;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-green {
+  color: $green;
+}

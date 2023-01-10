@@ -1,0 +1,83 @@
+/**
+ * advantages
+ */
+
+.advantages {
+  overflow: hidden;
+  padding: 0 0 5rem;
+
+  @media only screen and (min-width: $md) {
+    padding: 0 0 7.8125rem;
+  }
+
+  @media only screen and (min-width: $xxl) {
+    padding: 2rem 0 6.25rem;
+  }
+
+  @media only screen and (min-width: $xxxl) {
+    padding: 3rem 0 6.25rem;
+  }
+
+  &__list-image {
+    min-width: auto;
+    max-width: initial;
+    height: 33.4375rem;
+    top: 0;
+
+    @media only screen and (min-width: $md) {
+      height: 41.8125rem;
+      }
+
+    @media only screen and (min-width: $xxl) {
+        top: -0.5rem
+      }
+    }
+
+  &__img-wrapper {
+    padding: 33.4375rem 0 3.25rem 1rem;
+
+    @media only screen and (min-width: $md) {
+      padding: 41.8125rem 0 6.25rem 1rem;
+    }
+  }
+
+  &__list {
+    margin: 0.875rem 0 0;
+
+    @media only screen and (min-width: $md) {
+      margin: 2rem 0 0;
+    }
+
+    @media only screen and (min-width: $xxxl) {
+      margin: 2.5rem 0 0;
+    }
+  }
+
+  &__item {
+    padding: 0 0 0 1.9375rem;
+    margin: 0.25rem  0 0 0;
+
+    @media only screen and (min-width: $md) {
+      padding: 0 6rem 0 2.25rem;
+      margin: 2rem  0 0 0;
+    }
+
+    &:before {
+      content: "";
+      width: 0.8125rem;
+      height: 0.875rem;
+      background: url("../img/icon-triangle.svg") top center no-repeat;
+      position: absolute;
+      top: 0.875rem;
+      left: 0;
+    }
+
+    .text-big {
+      margin: 0;
+    }
+  }
+
+  &__text-top {
+    margin: 1rem 0 0;
+  }
+}

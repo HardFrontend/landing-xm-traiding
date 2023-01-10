@@ -1,0 +1,195 @@
+/**
+ * Header
+ */
+
+.main-header {
+  z-index: 2;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+
+  @include transition(transform);
+
+  &--hide {
+    transform: translateY(-100%);
+  }
+
+  .navbar {
+    padding: 1rem 0;
+
+    @media only screen and (min-width: $lg) {
+      padding: 1.3125rem 0 1.3125rem;
+    }
+
+    &__nav {
+      padding: 1rem;
+      margin: 0;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      background-color: $black;
+      min-height: 100vh;
+      max-width: 90%;
+      transform: translateX(-100%);
+      box-shadow: 0 0.1875rem 0.4375rem rgba(0, 0, 0, 0.35);
+
+      @include transition(transform);
+
+      @media only screen and (min-width: $xl) {
+        position: initial;
+        width: auto;
+        min-height: initial;
+        opacity: 1;
+        visibility: visible;
+        background-color: transparent;
+        top: initial;
+        padding: 0;
+        max-width: 100%;
+        transform: translateX(0);
+        box-shadow: none;
+      }
+    }
+
+    &__brand {
+      width: 10rem;
+
+      @media only screen and (min-width: $lg) {
+        width: 14.1875rem;
+        margin-top: -0.5rem;
+      }
+    }
+
+    &__menu-item {
+      position: initial;
+      list-style: none;
+      margin-top: 1rem;
+
+      &:hover {
+        .navbar {
+          &__dropdown-menu {
+            opacity: 1;
+            visibility: visible;
+            max-height: 30rem;
+            padding: 1.5rem 2.375rem;
+
+            @include transition(opacity);
+          }
+        }
+      }
+
+      @media only screen and (min-width: $xl) {
+        &:not(:first-of-type):not(.navbar-button) {
+          margin-left: 1.75rem;
+          margin-top: 0;
+        }
+
+        &:first-of-type {
+          margin-top: 0;
+        }
+      }
+    }
+
+    &__nav-link {
+      background-size: 0% 100%;
+      background-repeat: no-repeat;
+      text-decoration: none;
+      background-image: linear-gradient(to top, $green 2px, transparent 2px);
+      padding-bottom: 0.5rem;
+      margin: 1rem 0.875rem 0;
+      color: $white;
+      font-size: 1rem;
+      line-height: 1.25;
+      font-weight: $fw-bold;
+
+      @include transition(background-size opacity color);
+
+      &:hover {
+        background-size: 100% 100%;
+      }
+
+      &:focus,
+      &.active {
+        color: $green;
+        background-size: 100% 100%;
+      }
+
+      @media only screen and (min-width: $xl) {
+        margin: 0;
+        display: block;
+      }
+    }
+
+    &__dropdown-menu {
+      background-color: $black;
+      z-index: 1;
+      display: block;
+      opacity: 0;
+      visibility: hidden;
+      overflow: hidden;
+      list-style: none;
+      max-height: 0;
+
+      @include transition(visibility opacity);
+
+      @media only screen and (min-width: $xl) {
+        top: 100%;
+        left: 50%;
+        position: absolute;
+        transform: translateX(-4.75rem);
+        min-width: 12.375rem;
+        width: auto;
+        padding: 1.5rem 2.375rem;
+      }
+    }
+
+    &__dropdown-item {
+      width: 100%;
+      display: block;
+      font-weight: $fw-medium;
+      font-size: 0.875rem;
+      line-height: 2.2857;
+
+      &:hover,
+      &:focus,
+      &:active,
+      &.active {
+        background-size: 0% 100%;
+        color: $green;
+      }
+
+      &--tooltip {
+        font-size: 0.625rem;
+        line-height: 1.2;
+        color: $gray-2;
+        margin-bottom: 1.875rem;
+
+        &:hover,
+        &:focus,
+        &:active,
+        &.active {
+          background-size: 0% 100%;
+          color: $gray-2;
+        }
+      }
+    }
+
+    &__nav-button {
+      padding: 1.0625rem 1.75rem;
+      margin-left: 0.875rem;
+
+      @media only screen and (min-width: $lg) {
+        margin-left: 0.5rem;
+      }
+    }
+  }
+
+  &--active {
+    .navbar {
+      &__nav {
+        transform: translateX(0);
+      }
+    }
+  }
+}

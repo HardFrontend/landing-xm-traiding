@@ -1,0 +1,35 @@
+/**
+ * CTA buttons
+ */
+
+.cta {
+  @media only screen and (min-width: $md) {
+    margin-top: 4rem;
+  }
+
+  @media only screen and (min-width: $xxl) {
+    margin-top: 2rem;
+  }
+
+  &__button {
+    margin: 1.25rem 0 0 0;
+    width: 100%;
+
+    &:nth-child(1) {
+      margin: 2rem 0 0 0;
+    }
+
+    @media only screen and (min-width: $md) {
+      width: 13.875rem;
+      margin: 0 0 0 1.9375rem;
+
+      &:nth-child(1) {
+        margin: 0;
+      }
+    }
+
+    @media only screen and (min-width: $xxl) {
+      margin: 0 0 0 1.9375rem;
+    }
+  }
+}

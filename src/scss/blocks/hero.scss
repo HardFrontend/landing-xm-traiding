@@ -1,0 +1,40 @@
+/**
+ * Hero
+ */
+
+.hero {
+  padding: 0 0 2.875rem;
+
+  @media only screen and (min-width: $md) {
+    padding: 0 0 6.25rem;
+  }
+
+  @media only screen and (min-width: $xxl) {
+    padding: 11.25rem 0 8.125rem;
+  }
+
+    &__img-wrapper {
+    width: 18.1875rem;
+    margin: -2.5rem 0 2rem -5rem;
+
+    @media only screen and (min-width: $md) {
+      margin: -2rem 0 3rem -6rem;
+    }
+
+    @media only screen and (min-width: $xxl) {
+      width: 18.8125rem;
+      margin: 1rem 0 0 1rem;
+    }
+  }
+
+  &__title {
+    @media only screen and (min-width: $xxl) {
+      margin: 0 0 2rem;
+    }
+  }
+
+  &__link {
+    color: $white;
+    background-image: linear-gradient(to top, $white 1px, transparent 2px);
+  }
+}

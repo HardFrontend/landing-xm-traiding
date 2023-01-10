@@ -1,0 +1,99 @@
+/**
+ * Grid
+ */
+
+.container {
+  padding: 0 1.875rem;
+  margin: 0 auto;
+
+  @media only screen and (min-width: $md) {
+    max-width: $md-container;
+  }
+
+  @media only screen and (min-width: $xl) {
+    max-width: $xl-container;
+  }
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -1rem;
+}
+
+.col {
+  padding: 0 1rem;
+  width: 100%;
+}
+
+.col-auto {
+  flex: 0 0 auto;
+  width: auto;
+}
+
+.col-md-6 {
+  @media only screen and (min-width: $md) {
+    width: 50%;
+  }
+}
+
+.col-lg-4 {
+  @media only screen and (min-width: $lg) {
+    width: 32.33333%;
+  }
+}
+
+.col-lg-offset-6 {
+  @media only screen and (min-width: $lg) {
+    margin-left: 50%;
+  }
+}
+
+.col-xxl-7 {
+  @media only screen and (min-width: $xxl) {
+    flex: 0 0 auto;
+    width: 58.33333%;
+  }
+}
+
+.col-xxl-8 {
+  @media only screen and (min-width: $xxl) {
+    flex: 0 0 auto;
+    width: 66.66667%;
+  }
+}
+
+.col-xxl-5 {
+  @media only screen and (min-width: $xxl) {
+    flex: 0 0 auto;
+    width: 41.66667%;
+  }
+}
+
+.col-xxl-4 {
+  @media only screen and (min-width: $xxl) {
+    flex: 0 0 auto;
+    width: 33.33333%;
+  }
+}
+
+.col-xxl-6 {
+  @media only screen and (min-width: $xxl) {
+    flex: 0 0 auto;
+    width: 50%;
+  }
+}
+
+.col-xxl-9 {
+  @media only screen and (min-width: $xxl) {
+    flex: 0 0 auto;
+    width: 74%;
+  }
+}
+
+.col-xxl-3 {
+  @media only screen and (min-width: $xxl) {
+    flex: 0 0 auto;
+    width: 26%;
+  }
+}

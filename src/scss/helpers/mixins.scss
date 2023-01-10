@@ -1,0 +1,19 @@
+/**
+ * Mixins
+ */
+
+/* ~~~~~~~~~~ Transition ~~~~~~~~~~ */
+
+@mixin transition($properties: all, $duration: 0.2s, $timing-function: ease-in-out, $delay: null) {
+  $value: ();
+
+  @each $property in $properties {
+    @if length($value) > 0 {
+      $value: append($value, unquote(',') #{$property} $duration $timing-function $delay);
+    } @else {
+      $value: append($value, #{$property} $duration $timing-function $delay);
+    }
+  }
+
+  transition: $value;
+}

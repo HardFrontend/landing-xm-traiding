@@ -1,0 +1,31 @@
+/**
+ * Button
+ */
+
+.button {
+  background-color: $green;
+  font-size: 1.0625rem;
+  font-weight: $fw-bold;
+  line-height: 1.1764;
+  color: $white;
+  text-transform: uppercase;
+  text-align: center;
+  white-space: nowrap;
+  display: block;
+  border: 0.0625rem solid $green;
+  border-radius: 0.125rem;
+  padding: 1.1875rem 1.875rem;
+  width: fit-content;
+
+  @media only screen and (min-width: $md) {
+    font-size: 0.8125rem;
+    line-height: 1;
+    padding: 1.0625rem 1.875rem;
+  }
+
+  &--transparent{
+    background-color: transparent;
+    color: $green;
+    border-color: $green;
+  }
+}

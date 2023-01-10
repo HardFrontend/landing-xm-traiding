@@ -1,0 +1,55 @@
+/**
+ * Cards
+ */
+
+.cards {
+  &__title {
+    margin-bottom: 0;
+  }
+
+  &__splide {
+    margin-top: 1.5rem;
+
+    @media only screen and (min-width: $md) {
+      margin-top: 1.75rem;
+      }
+
+    @media only screen and (min-width: $xxl) {
+      margin: 2.75rem 0 3rem;
+      }
+    }
+
+  .splide__pagination {
+    position: static;
+    padding: 0.625rem;
+
+    @media only screen and (min-width: $md) {
+      padding: 1.5rem 1rem 0.85rem;
+      }
+    }
+
+  .splide__pagination__page {
+    width: 0.5rem;
+    height: 0.5rem;
+    border: 1px solid $gray-4;
+    background-color: transparent;
+    margin: 0 0.3125rem;
+
+    @include transition(background-color);
+
+
+    &.is-active {
+      transform: none;
+      background-color: $gray-4;
+    }
+  }
+
+  &__cta {
+    @media only screen and (min-width: $md) {
+      margin-top: 2.375rem;
+    }
+    @media only screen and (min-width: $xxl) {
+      margin-top: 3rem;
+    }
+  }
+}

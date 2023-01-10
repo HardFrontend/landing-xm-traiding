@@ -1,0 +1,38 @@
+/**
+ * Link
+ */
+
+.link {
+  color: $black;
+  background-size: 0% 100%;
+  background-repeat: no-repeat;
+  text-decoration: none;
+  background-image: linear-gradient(to top, $black 1px, transparent 2px);
+  padding-bottom: 0.1rem;
+
+  @include transition(background-size opacity color);
+
+  &:hover {
+    background-size: 100% 100%;
+  }
+
+  &:focus,
+  &.active {
+    color: $green;
+    background-size: 100% 100%;
+  }
+
+  &--reverse {
+    background-size: 100% 100%;
+    background-position: right;
+
+    &:hover {
+      background-size: 0% 100%;
+    }
+  }
+
+  &--white {
+    color: $white;
+    background-image: linear-gradient(to top, $white 1px, transparent 2px);
+  }
+}

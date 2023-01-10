@@ -1,0 +1,61 @@
+/**
+ * Mobile burger
+ */
+
+.mburger {
+  --mb-button-size: 2.375rem;
+  --mb-bar-height: 0.125rem;
+  --mb-bar-spacing: 0.375rem;
+  display: block;
+  margin-left: -0.5rem;
+  color: $white;
+  background: transparent;
+  border: none;
+  border-radius: 0;
+  position: relative;
+  box-sizing: border-box;
+  height: var(--mb-button-size);
+  padding: 0 0 0 var(--mb-button-size);
+  line-height: var(--mb-button-size);
+  vertical-align: middle;
+  appearance: none;
+  outline: none;
+  cursor: pointer;
+
+  @media only screen and (min-width: $xl) {
+    display: none;
+  }
+
+  &:hover {
+    .mburger {
+      &__line {
+        background: $green;
+      }
+    }
+  }
+
+  &__line {
+    display: block;
+    position: absolute;
+    left: 0.5rem;
+    width: calc(100% - 0.875rem);
+    height: 0.125rem;
+    background: $white;
+    color: inherit;
+    opacity: 1;
+
+    @include transition(background);
+
+    &:nth-of-type(1) {
+      top: 0.8rem;
+    }
+
+    &:nth-of-type(2) {
+      top: 50%;
+    }
+
+    &:nth-of-type(3) {
+      top: calc(100% - 0.8rem);
+    }
+  }
+}

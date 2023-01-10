@@ -1,0 +1,13 @@
+/**
+ * Text tooltip
+ */
+
+.text-tooltip {
+  font-size: 0.875rem;
+  line-height: 1.2857;
+
+  @media only screen and (min-width: $md) {
+    font-size:0.9375rem;
+    line-height: 1.1333;
+  }
+}

@@ -1,0 +1,56 @@
+/**
+ * Variables
+ */
+
+/*
+ * Color system
+ */
+$black: #000000;
+$white: #ffffff;
+$green: #079C72;
+$gray: #FAFAFA;
+$gray-2: #767676;
+$gray-3: #E5E5E5;
+$gray-4: #C4C4C4;
+$gray-5: #BABABA;
+
+$custom-colors: (
+    "black": $black,
+);
+
+$body-bg: $white;
+$body-color: $black;
+
+/**
+ * Grid
+ */
+// stylelint-disable
+
+$xs: 0;
+$sm: 375px;
+$md: 768px;
+$lg: 992px;
+$xl: 1230px;
+$xxl: 1440px;
+$xxxl: 1920px;
+
+/**
+ * Container width
+ */
+
+$sm-container: 528px;
+$md-container: 708px;
+$lg-container: 932px;
+$xl-container: 1170px;
+
+
+// stylelint-enable
+
+/**
+ * Fonts
+ */
+$font-family-base: "Gilroy", -apple-system, blinkmacsystemfont, "Segoe UI", roboto, "Helvetica Neue", arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+$fw-regular: 400;
+$fw-medium: 500;
+$fw-semi-bold: 600;
+$fw-bold: 700;

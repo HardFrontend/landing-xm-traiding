@@ -1,0 +1,10 @@
+/**
+ * Text big
+ */
+
+.text-big {
+  @media only screen and (min-width: $md) {
+    font-size: 1.25rem;
+    line-height: 1.4;
+  }
+}

@@ -1,0 +1,72 @@
+/**
+ * CTA footer
+ */
+
+.footer-cta {
+  padding: 2.6875rem 0 3.125rem;
+
+  @media only screen and (min-width: $md) {
+    padding: 3rem 0 4.375rem;
+  }
+
+  @media only screen and (min-width: $xxl) {
+    padding: 4.0625rem 0 3.125rem;
+  }
+
+  &__title {
+    font-size: 1.75rem;
+    line-height: 1.2142;
+
+    @media only screen and (min-width: $md) {
+      font-size: 2.3125rem;
+      line-height: 1.3513;
+      padding: 0 10rem 0 0;
+    }
+  }
+
+  .cta {
+    margin: 0 0 1.5rem;
+
+    @media only screen and (min-width: $md) {
+      margin: 2.5rem 0 2.5rem;
+    }
+
+    @media only screen and (min-width: $xxl) {
+      margin: 0 0 0.5rem;
+    }
+
+    &__button {
+      @media only screen and (min-width: $md) {
+        font-size: 1.0625rem;
+        flex: 1;
+        padding: 1.25rem 1.875rem;
+      }
+
+      @media only screen and (min-width: $xxl) {
+        font-size: 0.8125rem;
+        flex: 0;
+        min-width: 13.875rem;
+        padding: 1.0625rem 1.875rem;
+      }
+
+        &:nth-child(1) {
+        margin: 0.5rem 0 0;
+
+        @media only screen and (min-width: $md) {
+          margin: 0;
+        }
+      }
+    }
+  }
+
+  .text-tooltip {
+    margin: 0 0 1.5rem;
+  }
+
+  &__col-right {
+    @media only screen and (min-width: $xxl) {
+      padding: 0 1rem 0 5rem;
+      margin-top: -0.5rem;
+    }
+    }
+}
