@@ -9,7 +9,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const sliderInit = () => {
     [...document.querySelectorAll(".js-cards-slider")].forEach((slider) => {
-      console.log(slider);
       const instance = new Splide(slider, {
         arrows: false,
         pagination: true,

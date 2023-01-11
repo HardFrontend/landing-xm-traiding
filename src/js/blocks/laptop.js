@@ -11,7 +11,6 @@ document.addEventListener("DOMContentLoaded", () => {
     [...document.querySelectorAll(".js-laptop-slider-wrapper")].forEach((slider) => {
       const sliderMain = slider.querySelector(".js-laptop-slider");
       const sliderNavs = slider.querySelector(".js-laptop-slider-navs");
-      console.log(sliderNavs);
 
       const instance = new Splide(sliderMain, {
         arrows: false,

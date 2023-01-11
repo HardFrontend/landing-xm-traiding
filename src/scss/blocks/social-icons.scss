@@ -11,5 +11,9 @@
     &:last-child {
       margin-right: 0;
     }
+
+    @media only screen and (min-width: $md) {
+      margin-right: 1.875rem;
+    }
   }
 }

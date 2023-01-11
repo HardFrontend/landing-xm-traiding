@@ -15,6 +15,7 @@ body {
   line-height: 1.4117;
   color: $black;
   font-family: "Gliroy", sans-serif;
+  min-width: 320px;
 
   @media only screen and (min-width: $md) {
     font-size: 1.125rem;
@@ -107,6 +108,13 @@ h5,
 
     }
   }
+
+h6,
+.h6 {
+  font-size: 1.0625rem;
+  line-height: 1.3125;
+  margin: 0;
+}
 
 /* ~~~~~~~~~~ Text elements ~~~~~~~~~~ */
 

@@ -13,6 +13,10 @@
     padding: 4.0625rem 0 3.125rem;
   }
 
+  @media only screen and (min-width: $xxxl) {
+    padding: 4.0625rem 0 2rem;
+  }
+
   &__title {
     font-size: 1.75rem;
     line-height: 1.2142;
@@ -33,6 +37,10 @@
 
     @media only screen and (min-width: $xxl) {
       margin: 0 0 0.5rem;
+    }
+
+    @media only screen and (min-width: $xxxl) {
+      margin: 0 0 1rem;
     }
 
     &__button {

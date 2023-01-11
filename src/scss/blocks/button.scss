@@ -17,6 +17,15 @@
   padding: 1.1875rem 1.875rem;
   width: fit-content;
 
+  @include transition(background-color color);
+
+  &:hover,
+  &:active,
+  &:focus {
+    background-color: transparent;
+    color: $green;
+  }
+
   @media only screen and (min-width: $md) {
     font-size: 0.8125rem;
     line-height: 1;
@@ -27,5 +36,12 @@
     background-color: transparent;
     color: $green;
     border-color: $green;
+
+    &:hover,
+    &:active,
+    &:focus {
+      background-color: $green;
+      color: $white;
+    }
   }
 }

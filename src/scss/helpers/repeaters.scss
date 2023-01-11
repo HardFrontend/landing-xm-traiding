@@ -42,8 +42,20 @@ body {
   }
 }
 
+.d-xxl-flex {
+  @media only screen and (min-width: $xxl) {
+    display: flex;
+  }
+}
+
 .d-flex {
   display: flex;
+}
+
+.d-md-flex {
+  @media only screen and (min-width: $md) {
+    display: flex;
+  }
 }
 
 .d-lg-flex {

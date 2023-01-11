@@ -7,15 +7,16 @@ window.addEventListener("DOMContentLoaded", () => {
   const header = document.querySelector(".js-main-header");
   const body = document.querySelector("body");
 
-
   if (mburger && header) {
     mburger.addEventListener('click', (e) => {
       if (header.classList.contains("main-header--active")) {
         body.classList.remove("noscroll");
         header.classList.remove("main-header--active");
+        mburger.classList.remove("mburger--spin");
       } else {
         body.classList.add("noscroll");
         header.classList.add("main-header--active");
+        mburger.classList.add("mburger--spin");
       }
     })
   }
